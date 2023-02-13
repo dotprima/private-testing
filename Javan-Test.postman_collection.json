@@ -1,0 +1,500 @@
+{
+	"info": {
+		"_postman_id": "30fd50a1-e092-482f-8a05-207acac8153f",
+		"name": "Javan-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15270487"
+	},
+	"item": [
+		{
+			"name": "Getallfamilly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getallfamilly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getallfamilly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getallchild",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getallchild",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getallchild"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getallgrandchild",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getallgrandchild",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getallgrandchild"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Createfamilly",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama_keluarga",
+							"value": "Test1",
+							"type": "text"
+						},
+						{
+							"key": "nama_ayah",
+							"value": "Test3",
+							"type": "text"
+						},
+						{
+							"key": "nama_ibu",
+							"value": "Test23",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_lahir_ayah",
+							"value": "1985-02-08",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_lahir_ibu",
+							"value": "1984-02-08",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create/familly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create",
+						"familly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Createchild",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "keluarga_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "jk",
+							"value": "Perempuan",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_lahir",
+							"value": "1985-02-08",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create/child",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create",
+						"child"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creategrandchild",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "anak_id",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "jk",
+							"value": "Perempuan",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_lahir",
+							"value": "1985-02-08",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create/grandchild",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create",
+						"grandchild"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Familly",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama_keluarga",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "nama_ayah",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "nama_ibu",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_lahir_ayah",
+							"value": "1985-02-08",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_lahir_ibu",
+							"value": "1985-02-08",
+							"type": "text"
+						},
+						{
+							"key": "id_familly",
+							"value": "9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update/familly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update",
+						"familly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Child",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_anak",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "keluarga_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "jk",
+							"value": "Perempuan",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_lahir",
+							"value": "1985-02-08",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update/child",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update",
+						"child"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update GrandChild",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "anak_id",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "jk",
+							"value": "Perempuan",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_lahir",
+							"value": "1985-02-08",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update/grandchild",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update",
+						"grandchild"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Familly",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete/familly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete",
+						"familly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Child",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete/child",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete",
+						"child"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Grandchild",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "13",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete/grandchild",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete",
+						"grandchild"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
